@@ -4,17 +4,17 @@ let reverse = document.querySelector("#reverseP");
 let trinti = document.querySelector("#clear");
 
 t.addEventListener("click", (event) => {
-  const result = triangle(event.target.inneHTML);
+  const result = triangle(event.target.innerHTML);
   printOutput(result);
 });
 
 pyram.addEventListener("click", (event) => {
-  const result = pyramid(event.target.inneHTML);
+  const result = pyramid(event.target.innerHTML);
   printOutput(result);
 });
 
 reverse.addEventListener("click", (event) => {
-  const result = reversePyramid(event.target.inneHTML);
+  const result = reversePyramid(event.target.innerHTML);
   printOutput(result);
 });
 
@@ -32,6 +32,7 @@ function triangle() {
     }
     trik += "<br>";
   }
+  return trik;
   // document.write(trik);
 }
 
@@ -47,6 +48,7 @@ function pyramid() {
     }
     pyr += "<br>";
   }
+  return pyr;
   // document.write(pyr);
 }
 
@@ -62,6 +64,7 @@ function reversePyramid() {
     }
     rever += "<br>";
   }
+  return rever;
   // document.write(rever);
 }
 
