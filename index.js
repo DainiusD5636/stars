@@ -53,13 +53,13 @@ function pyramid() {
 }
 
 function reversePyramid() {
-  let n = 5;
+  let n = 6;
   let rever = "";
-  for (let i = 1; i <= n; i++) {
-    for (let j = 1; j < i + 1; j++) {
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < i; j++) {
       rever += "&nbsp;";
     }
-    for (let k = 1; k <= 2 * (n - i) + 1; k++) {
+    for (let k = 0; k < 1 * (n - i) - 1; k++) {
       rever += "&nbsp;*&nbsp;";
     }
     rever += "<br>";
