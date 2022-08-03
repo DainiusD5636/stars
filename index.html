@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Žvaigždės trikampiai</title>
+    <style>
+      body {
+        font-family: monospace;
+        background-color: beige;
+      }
+      .mygtukai {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      button {
+        margin: 50px 20px;
+        width: 200px;
+        height: 200px;
+        font-size: 32px;
+        background-color: blueviolet;
+        color: white;
+        border-radius: 50%;
+      }
+      button:hover {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mygtukai">
+      <button id="triangle">Trikampis</button>
+      <button id="pyramid">Piramidė</button>
+      <button id="reverseP">Atvirkštinė piramidė</button>
+      <button id="clear">Trinti</button>
+    </div>
+
+    <div id="display">rez</div>
+    <script src="index.js"></script>
+  </body>
+</html>
